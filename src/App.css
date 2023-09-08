@@ -1,38 +1,136 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Establece el margen y el relleno a cero para todos los elementos */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del encabezado */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2e856fb8;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.lista-veterinaria {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.lista-veterinaria li {
+  margin: 0;
+}
+
+.lista-veterinaria li a {
+  font-family: 'Lato', sans-serif;
+  color: #f0f0e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.03em;
+}
+
+.lista-veterinaria li a:hover {
+  color: #12342c;
+}
+
+/* Estilos main */
+
+main {
+  max-width: 1920px;
+  margin: auto;
+}
+
+/* Estilos para el footer */
+
+.footer-links {
+  background-color: #2d80b7;
+  padding: 30px 0;
+  color: #333;
+}
+
+.direccion-cabos p {
+  color: #f0f0e2;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links img {
+  width: 250px;
+  height: auto;
+}
+
+.direccion-cabos p {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 25px;
+  color: #f0f0e2;
+  font-size: 60px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f9f9f2;
+}
+
+.copyright {
+  background-color: #2d80b7;
+  color: #f0f0e2;
+  padding: 15px 0;
+  user-select: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos adicionales */
+
+footer {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+  .lista-veterinaria {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .lista-veterinaria li a {
+    font-size: 0.85em;
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    background-color: #2e856fb8;
+    padding: 20px;
   }
 }

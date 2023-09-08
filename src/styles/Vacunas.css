@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Estilo de la parte Vacunas */
+
+.vacunas-container {
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: #628d98;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vacunas-veterinaria p {
+  font-family: 'Lato', sans-serif;
+  color: #616161;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.vacunas-veterinaria {
+  margin-top: 60px;
+}
+
+.vacuna {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vacuna h3 {
+  font-family: 'Lato', sans-serif;
+  color: #2F4858;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vacuna p {
+  font-family: 'Lato', sans-serif;
+  color: #616161;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para fechas y horarios */
+
+.vacuna p:first-of-type {
+  color: #44a0ab;
+  font-weight: bold;
+}
+
+/* Estilos para próximas vacunaciones */
+
+.vacuna p:nth-of-type(2) {
+  color: #779e4b;
+  font-weight: bold;
+}
+
+/* Estilos para horarios de aplicación */
+
+.vacuna p:nth-of-type(3) {
+  font-style: italic;
+  color: #999999;
+}
+
+/* Media query para pantallas móviles */
+
+@media only screen and (max-width: 600px) {
+  .vacunas-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

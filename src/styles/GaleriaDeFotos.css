@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilo de la Galería de Fotos */
+
+.galeria-container {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.galeria-container h1 {
+  color: #628d98;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Estilo del Fotos */
+
+.foto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.foto:hover img {
+  transform: scale(1.05);
+}
+
+.foto h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.foto:hover h3 {
+  opacity: 1;
+}
+
+/* Estilos para pantallas de tamaño móvil */
+
+@media only screen and (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

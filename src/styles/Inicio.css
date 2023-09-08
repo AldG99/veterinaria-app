@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Elementos relacionados con la veterinaria */
+
+.veterinaria-container {
+  position: relative;
+}
+
+/* Estilos de la presentación */
+
+.presentacion-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.presentacion-container img {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos del texto */
+
+.texto-superpuesto-container {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  color: #5f9eac;
+  top: 4.5em;
+  right: 1.25em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 1.7vw;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.texto-superpuesto p {
+  font-family: 'Lato', sans-serif;
+  color: #5f9eac;
+  font-size: 1.2vw;
+}
+
+/* Estilos del botón */
+
+.boton-cita {
+  top: 23.75em;
+  font-family: 'Lato', sans-serif;
+  background-color: #5f9eac;
+  color: #ffffff;
+  padding: 0.75vw 2vw;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15vw;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  left: 68em;
+}
+
+.boton-cita:hover {
+  background-color: #4d8996;
+}
+
+/* Estilos de la part de inicio */
+
+.inicio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.texto-destacado {
+  display: inline;
+  font-weight: bold;
+  color: #425e70;
+}
+
+.texto-izquierda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bienvenido-veterinaria {
+  text-align: left;
+  max-width: 700px;
+}
+
+.bienvenido-veterinaria h1 {
+  font-family: 'Lato', sans-serif;
+  color: #628d98;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.linea-ornament {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 3px;
+  background-color: #dda637;
+  margin-bottom: 20px;
+}
+
+.bienvenido-veterinaria p {
+  font-family: 'Lato', sans-serif;
+  color: #3c3c3c;
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.imagen-derecha {
+  margin-left: 40px;
+}
+
+.imagen-derecha img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del programas de bienestar */
+
+.programas-bienestar {
+  background-color: #cadbdc;
+  padding: 50px;
+}
+
+.programas-bienestar h2 {
+  font-family: 'Lato', sans-serif;
+  color: #596775;
+  margin-left: 200px;
+  font-size: 42px;
+}
+
+.programas-bienestar p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+}
+
+.programas-bienestar ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.programas-bienestar li {
+  font-family: 'Lato', sans-serif;
+  color: #2d424c;
+  margin-left: 220px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.programas-bienestar p:last-child {
+  margin-bottom: 0;
+}
+
+/* Estilos de conocer personal */
+
+.personal-titulo {
+  padding: 50px;
+}
+
+.personal-titulo h2 {
+  font-family: 'Lato', sans-serif;
+  color: #71a0ab;
+  font-size: 42px;
+  text-align: center;
+}
+
+.texto-personal h4 {
+  font-family: 'Playfair Display', serif;
+  color: #71a0ab;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.texto-personal p {
+  font-family: 'Playfair Display', serif;
+  color: #3c3c3c;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.personal-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 35px;
+  margin-right: 200px;
+}
+
+.linea-personal-ornament {
+  margin-top: 20px;
+  border-bottom: 3px solid rgb(63, 128, 135);
+  margin-bottom: 20px;
+}
+
+.texto-personal {
+  margin-top: 60px;
+  flex: 0.6;
+  order: 2;
+  margin-left: 20px;
+}
+
+.imagen-personal-izquierda {
+  flex: 0.4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.imagen-personal-izquierda img {
+  width: 100%;
+  height: auto;
+  max-width: 325px;
+  max-height: 325px;
+  object-fit: cover;
+}
+
+/* Media query para pantallas móviles */
+
+@media (max-width: 768px) {
+  .texto-izquierda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-derecha {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .programas-bienestar h2,
+  .programas-bienestar p,
+  .programas-bienestar li {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
