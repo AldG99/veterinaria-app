@@ -10,7 +10,7 @@ function GaleriaDeFotos() {
   return (
     <div className='galeria-de-fotos-color'>
       <Helmet>
-        <title>Galería de Fotos - Veterinaria</title>
+        <title>Galería de Fotos - PetCare</title>
       </Helmet>
       <style scoped>
         {`

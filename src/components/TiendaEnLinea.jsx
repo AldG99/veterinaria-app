@@ -61,7 +61,7 @@ function TiendaEnLinea() {
   return (
     <div className='tienda-container'>
       <Helmet>
-        <title>Tienda en Línea - Veterinaria</title>
+        <title>Tienda en Línea - PetCare</title>
       </Helmet>
       <style scoped>
         {`

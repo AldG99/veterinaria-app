@@ -11,7 +11,7 @@ function Inicio() {
   return (
     <div className='veterinaria-container'>
       <Helmet>
-        <title>Veterinaria</title>
+        <title>PetCare</title>
       </Helmet>
       <style scoped>
         {`

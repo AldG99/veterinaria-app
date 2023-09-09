@@ -49,7 +49,7 @@ function Vacunas() {
   return (
     <div className='vacunas-container'>
       <Helmet>
-        <title>Vacunas - Veterinaria</title>
+        <title>Vacunas - PetCare</title>
       </Helmet>
       <style scoped>
         {`

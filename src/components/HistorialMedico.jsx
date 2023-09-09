@@ -10,7 +10,7 @@ function HistorialMedico() {
   return (
     <div className='historial-container'>
       <Helmet>
-        <title>Historial Médico - Veterinaria</title>
+        <title>Historial Médico - PetCare</title>
       </Helmet>
       <style scoped>
         {`
